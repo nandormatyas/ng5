@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  //fullImagePath: string;
+
+  constructor() {
+    //this.fullImagePath = 'assets/images/'
+  }
 }

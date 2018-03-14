@@ -8,14 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { PythonComponent } from './python/python.component';
+import { JavascriptComponent } from './javascript/javascript.component';
+import { DevopsComponent } from './devops/devops.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    PythonComponent,
+    JavascriptComponent,
+    DevopsComponent
   ],
   imports: [
     BrowserModule,
