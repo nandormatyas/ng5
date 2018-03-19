@@ -5,6 +5,20 @@
 }
 
 img {
-  max-width: 60%;
+  max-width: 80vw;
   height: auto;
+}
+
+h1 {
+  font-size: 4vw;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+     font-size: 20px;
+  }
+}
+@media screen and (min-width: 690px) {
+  img {
+    max-width: 60vw;
+  }
 }
