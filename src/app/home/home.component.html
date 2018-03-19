@@ -1,4 +1,196 @@
-<div class="container color-dark">
+
+<div class="home">
+  <div class="intro">
+    <h1>Welcome!</h1>
+    <div class="intro_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    <img class="profile_img" src="../../assets/images/nandi.jpg" alt="Profile">
+  </div>
+  <div class="cv">
+    <p (click)="showHidexp()"><strong class="show">Work experience</strong></p><br>
+    <div class="xp" [@goals]="hiddenxp">
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2014 - 2017</div><br>
+        <div class="job_title">
+          <p><strong>Chief Retention Manager:</strong></p>
+          <p><strong>eBrókerház Zrt. (Iforex Brokerage Ltd.)</strong></p>
+        </div>
+        
+        <div class="tasks">
+          <ul>
+            <li>Inventing marketing campaigns for existing clients</li>
+            <li>Holding on-line seminars</li>
+            <li>Producing training videos for clients</li>
+            <li>Introducing and implementing new trading instruments</li>
+            <li>Professional support for retention officers and the sales managers</li>
+            <li>Handling complaints</li>
+            <li>Managing retention daily operations</li>
+            <li>Maintain company expansion</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2011-2014</div><br>
+        <div class="job_title">
+          <p><strong>Retention manager:</strong></p>
+          <p><strong>Iforex Brokerage Ltd.</strong></p>           
+        </div>
+        <div class="tasks">
+          <ul>
+            <li>Educating clients, such as gathering information, understanding charts and economy calendars, showing different types of strategies</li>
+            <li>Assist clients to achieve success in business </li>
+            <li>Producing training videos for clients</li>
+            <li>Generating trading volume</li>
+            <li>Keep in touch with potential clients</li>
+            <li>Personal meetings</li>
+          </ul>    
+        </div>
+      </div>
+      <br>
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2010-2011</div><br>
+        <div class="job_title">
+          <p><strong >Sales representative:</strong></p>
+          <p><strong>Iforex Brokerage Ltd.</strong></p>           
+        </div>
+        <div class="tasks">
+          <ul>
+            <li>Making contact with registered leads</li>
+            <li>Selling the trade opportunity</li>
+            <li>Introducing the unique trading platform</li>
+            <li>Forwarding clients to the retention</li>
+          </ul>    
+        </div>
+      </div>
+      <br>
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2010-2011</div><br>
+        <div class="job_title">
+          <p><strong>Financial Advisor:</strong></p>
+          <p><strong>AVIVA Life Insurance Co.</strong></p>           
+        </div>
+        <div class="tasks">
+          <ul>
+            <li>Contacts with clients, maintain contacts</li>
+            <li>Customer Needs Assessment</li>
+            <li>Create personalized financial plan</li>
+            <li>Contracting</li>
+          </ul>    
+        </div>
+      </div>
+      <br>
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2005-2008</div><br>
+        <div class="job_title">
+          <p><strong>Trade Assistant:</strong></p>
+          <p><strong>Juma Kft. Budapest</strong></p>           
+        </div>
+        <div class="tasks">
+          <ul>
+            <li>Coordination of goods</li>
+            <li>Issue invoices</li>
+            <li>Manage and maintain warehouse and customer database</li>
+            <li>Taking inventory</li>
+            <li>Executing orders</li>
+          </ul>    
+        </div>
+      </div>
+      <br>
+      <div class="job" *ngIf="hiddenxp">
+        <div class="date">2004-2005</div><br>
+        <div class="job_title">
+          <p><strong>Call-center operator:</strong></p>
+          <p><strong>M-Service Kft. (T-com directory enquiries)</strong></p>           
+        </div>
+        <div class="tasks">
+          <ul>
+            <li>Answering all kind of questions asked by the caller.</li>
+            <li>The diversity of clients required composure and tolerance</li>
+          </ul>    
+        </div>
+      </div>  
+    </div>
+
+    <p (click)="showHideLang()"><strong class="show">Languages</strong></p><br>
+    <div class="tounges" [@goals]="hiddenLang">
+      <div class="lang" *ngIf="hiddenLang">
+        <p>English:</p>
+        <p>Proficient level (Possessing intermediate state examination in English and English specialist language in foreign trade)</p>
+      </div>
+      <br>
+      <div class="lang" *ngIf="hiddenLang">
+        <p>German:</p>
+        <p>Basic level</p>
+      </div>
+      <br>    
+      <div class="lang" *ngIf="hiddenLang">
+        <p>Latin:</p>
+        <p>Basic level</p>
+      </div>      
+    </div>
+    <br>
+    <p (click)="showHideEdu()"><strong class="show">Education</strong></p><br>
+    <div class="edu" [@goals]="hiddenEdu" *ngIf="hiddenEdu">
+      <div class="study">
+        <div class="sdate">2017-2018</div><br>
+        <div class="subject">
+          <p><strong>Software Developer</strong></p>
+          <p>Green Fox Academy</p> 
+          <a href="https://github.com/greenfox-academy/nandormatyas">To my Repository.</a>          
+        </div>
+      </div>
+      <br>
+      <div class="study">
+        <div class="sdate">2016-2017</div><br>
+        <div class="subject">
+          <p><strong>Python (Retrieving, Processing, and Visualizing Data)</strong></p>
+          <p>University of Michigan (Coursera online courses)</p>
+          <a href="https://github.com/nandormatyas/Coursera-python-studies">To my Repository.</a><br>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/FVRAHCNT6VTN">Check my Certificate!</a>
+        </div>
+      </div>
+      <div class="study">
+        <div class="sdate">2013</div><br>
+        <div class="subject">
+          <p><strong>Securities law clerk</strong></p>
+          <p>Central-European Broker Training Foundation</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study">
+        <div class="sdate">2010</div><br>
+        <div class="subject">
+          <p><strong>Insurance Agent</strong></p>
+          <p>Hungarian Central Bank</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study">
+        <div class="sdate">2004-2005</div><br>
+        <div class="subject">
+          <p><strong>Export\Import executive</strong></p>
+          <p>Hunfalvy János Bilingual, School of Foreign Trade and Economics</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study">
+        <div class="sdate">1998-2004</div><br>
+        <div class="subject">
+          <p>Elte Trefort Ágoston Gyakorlóiskola és Gimnázium</p>
+          <p><strong>Faculties: Psychology, Mathematics</strong></p> 
+          <p>Secondary School, Budapest</p>
+        </div>
+      </div>
+      <br>
+    </div> 
+  </div> 
+</div>
+
+
+
+
+<!-- BUCKET LIST CODE -->
+<!-- <div class="container color-dark">
   <div class="col">
     <p>Add bucket list item</p>
   </div>
@@ -20,4 +212,4 @@
       {{ goal }}
     </p>
   </div>
-</div>
+</div> -->
