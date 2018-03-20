@@ -41,11 +41,17 @@ export class HomeComponent implements OnInit {
   hiddenxp = false;
   hiddenLang = false;
   hiddenEdu = false;
+  selected = false;
 
   showHidexp () {
     this.hiddenLang = false;
     this.hiddenEdu = false;
     this.hiddenxp = !this.hiddenxp;
+    this.selected = !this.selected;
+ /*    this.selected ? true : () => {
+      let active = document.getElementsByClassName('experience');
+      active.
+    } */
     
   }
   showHideLang () {
