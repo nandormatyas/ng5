@@ -20,7 +20,7 @@ import { DataService } from '../data.service';
           ]))
         ]), {optional: true}),
 
-        query(':leave', stagger('400ms', [
+        query(':leave', stagger('1ms', [
           animate('.3s ease-in', keyframes([
             style({opacity:1, transform: 'translateY(0)', offset: 0}),
             style({opacity:.5, transform: 'translateY(35px)', offset: .3}),
@@ -43,17 +43,24 @@ export class HomeComponent implements OnInit {
   hiddenEdu = false;
 
   showHidexp () {
-    this.hiddenxp = !this.hiddenxp; 
+    this.hiddenLang = false;
+    this.hiddenEdu = false;
+    this.hiddenxp = !this.hiddenxp;
+    
   }
   showHideLang () {
+    this.hiddenxp = false;
+    this.hiddenEdu = false;
     this.hiddenLang = !this.hiddenLang;
   }
   showHideEdu () {
+    this.hiddenxp = false;
+    this.hiddenLang = false;
     this.hiddenEdu = !this.hiddenEdu;
   }
-
+  
   constructor(private _data: DataService) { }
-
+  
   ngOnInit () {
     this._data.goal.subscribe(res => this.goals = res);
     this.itemCount = this.goals.length;
