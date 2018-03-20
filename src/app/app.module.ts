@@ -19,7 +19,7 @@ import { DevopsComponent } from './devops/devops.component';
     HomeComponent,
     PythonComponent,
     JavascriptComponent,
-    DevopsComponent
+    DevopsComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,9 +21,7 @@ const routes: Routes = [
   {
     path:'devops',
     component: DevopsComponent
-  }
-
-
+  },
 ];
 
 @NgModule({

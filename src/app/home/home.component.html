@@ -2,11 +2,21 @@
 <div class="home">
   <div class="intro">
     <h1>Welcome!</h1>
-    <div class="intro_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+    <div class="intro_text">
+      <p>In the past 7 years I was working in the financial sector, at a brokerage company. During this time period I climbed the career ladder from bottom to top, my last position was Chief Retention Manager. Besides my job I started to gain interest towards data sciences, followed by taking a Coursera Specialization about it in python. I found this world really challenging and decided to take part of this field’s future.</p>
+      <br>
+      <p>In the close future I would like to widen my existing knowledge in python (with it’s data science related libraries) and  javascript (React and Angular frameworks). Since I gained valuable knowledge about Development Operations, now I can think about full-full-stack development on the short run. On the long run I’m mainly interested in data sciences and AI development.</p>
+    </div>
     <img class="profile_img" src="../../assets/images/nandi.jpg" alt="Profile">
   </div>
+
+  <div class="buttons">
+    <div class="button" (click)="showHidexp()"><strong>Job Experience</strong></div>
+    <div class="button" (click)="showHideEdu()"><strong>Education</strong></div>
+    <div class="button" (click)="showHideLang()"><strong>Languages</strong></div>
+  </div>
   <div class="cv">
-    <p (click)="showHidexp()"><strong class="show">Work experience</strong></p><br>
+    
     <div class="xp" [@goals]="hiddenxp">
       <div class="job" *ngIf="hiddenxp">
         <div class="date">2014 - 2017</div><br>
@@ -110,8 +120,64 @@
         </div>
       </div>  
     </div>
+    <br>
 
-    <p (click)="showHideLang()"><strong class="show">Languages</strong></p><br>
+    <div class="edu" [@goals]="hiddenEdu">
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">2017-2018</div><br>
+        <div class="subject">
+          <p><strong>Software Developer</strong></p>
+          <p>Green Fox Academy</p> 
+          <a href="https://github.com/greenfox-academy/nandormatyas">To my Repository.</a>          
+        </div>
+      </div>
+      <br>
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">2016-2017</div><br>
+        <div class="subject">
+          <p><strong>Python (Retrieving, Processing, and Visualizing Data)</strong></p>
+          <p>University of Michigan (Coursera online courses)</p>
+          <div class="py_links">
+            <a href="https://github.com/nandormatyas/Coursera-python-studies">To my Repository.</a><br>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/FVRAHCNT6VTN">Check my Certificate!</a>
+          </div>
+        </div>
+      </div>
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">2013</div><br>
+        <div class="subject">
+          <p><strong>Securities law clerk</strong></p>
+          <p>Central-European Broker Training Foundation</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">2010</div><br>
+        <div class="subject">
+          <p><strong>Insurance Agent</strong></p>
+          <p>Hungarian Central Bank</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">2004-2005</div><br>
+        <div class="subject">
+          <p><strong>Export\Import executive</strong></p>
+          <p>Hunfalvy János Bilingual, School of Foreign Trade and Economics</p> 
+        </div>
+      </div>
+      <br>
+      <div class="study" *ngIf="hiddenEdu">
+        <div class="sdate">1998-2004</div><br>
+        <div class="subject">
+          <p>Elte Trefort Ágoston Gyakorlóiskola és Gimnázium</p>
+          <p><strong>Faculties: Psychology, Mathematics</strong></p> 
+          <p>Secondary School, Budapest</p>
+        </div>
+      </div>
+      <br>
+    </div> 
+
     <div class="tounges" [@goals]="hiddenLang">
       <div class="lang" *ngIf="hiddenLang">
         <p>English:</p>
@@ -126,62 +192,7 @@
       <div class="lang" *ngIf="hiddenLang">
         <p>Latin:</p>
         <p>Basic level</p>
-      </div>      
-    </div>
-    <br>
-    <p (click)="showHideEdu()"><strong class="show">Education</strong></p><br>
-    <div class="edu" [@goals]="hiddenEdu" *ngIf="hiddenEdu">
-      <div class="study">
-        <div class="sdate">2017-2018</div><br>
-        <div class="subject">
-          <p><strong>Software Developer</strong></p>
-          <p>Green Fox Academy</p> 
-          <a href="https://github.com/greenfox-academy/nandormatyas">To my Repository.</a>          
-        </div>
       </div>
-      <br>
-      <div class="study">
-        <div class="sdate">2016-2017</div><br>
-        <div class="subject">
-          <p><strong>Python (Retrieving, Processing, and Visualizing Data)</strong></p>
-          <p>University of Michigan (Coursera online courses)</p>
-          <a href="https://github.com/nandormatyas/Coursera-python-studies">To my Repository.</a><br>
-          <a href="https://www.coursera.org/account/accomplishments/specialization/FVRAHCNT6VTN">Check my Certificate!</a>
-        </div>
-      </div>
-      <div class="study">
-        <div class="sdate">2013</div><br>
-        <div class="subject">
-          <p><strong>Securities law clerk</strong></p>
-          <p>Central-European Broker Training Foundation</p> 
-        </div>
-      </div>
-      <br>
-      <div class="study">
-        <div class="sdate">2010</div><br>
-        <div class="subject">
-          <p><strong>Insurance Agent</strong></p>
-          <p>Hungarian Central Bank</p> 
-        </div>
-      </div>
-      <br>
-      <div class="study">
-        <div class="sdate">2004-2005</div><br>
-        <div class="subject">
-          <p><strong>Export\Import executive</strong></p>
-          <p>Hunfalvy János Bilingual, School of Foreign Trade and Economics</p> 
-        </div>
-      </div>
-      <br>
-      <div class="study">
-        <div class="sdate">1998-2004</div><br>
-        <div class="subject">
-          <p>Elte Trefort Ágoston Gyakorlóiskola és Gimnázium</p>
-          <p><strong>Faculties: Psychology, Mathematics</strong></p> 
-          <p>Secondary School, Budapest</p>
-        </div>
-      </div>
-      <br>
     </div> 
   </div> 
 </div>
