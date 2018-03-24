@@ -3,7 +3,6 @@
   flex-direction: column-reverse;
   justify-content: space-around;
   font-size: 2vw;
-
 }
 
 img {
@@ -28,13 +27,13 @@ h1 {
   }
 }
 
-
 .project{
   display: flex;
   flex-direction: row;
 }
 p {
-  padding: 4%;
+  margin: 0;
+  padding: 1% 4% 1% 4%;
 }
 
 

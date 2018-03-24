@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-size: 2vw;
 }
 
 img {
@@ -14,14 +15,26 @@ h1 {
   width: auto;
   text-align: center;
 }
-.main {
-  font-size: 2vw;
-}
 
 @media screen and (min-width: 690px) {
   img {
     max-width: 40vw;
   }
 }
+@media screen and (max-width: 690px) {
+  img {
+    max-width: 30vw;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: row-reverse;
+}
+p {
+  margin: 0;
+  padding: 1% 4% 1% 4%;
+}
+
 
 
