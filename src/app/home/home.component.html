@@ -9,11 +9,10 @@
     </div>
     <img class="profile_img" src="../../assets/images/nandi.jpg" alt="Profile">
   </div>
-
   <div class="buttons">
-    <div class="button experience" (click)="showHidexp()"><strong>Job Experience</strong></div>
-    <div class="button education" (click)="showHideEdu()"><strong>Education</strong></div>
-    <div class="button language" (click)="showHideLang()"><strong>Languages</strong></div>
+    <div class="button experience" (click)="showHidexp()" [ngStyle]="activeXp()"><strong>Job Experience</strong></div>
+    <div class="button education" (click)="showHideEdu()" [ngStyle]="activeEdu()"><strong>Education</strong></div>
+    <div class="button language" (click)="showHideLang()" [ngStyle]="activeLang()"><strong>Languages</strong></div>
   </div>
   <div class="cv">
     
