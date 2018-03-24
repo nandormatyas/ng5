@@ -13,7 +13,6 @@
     padding: 4%;
 }
 .profile_img {
-    margin: auto;
     grid-row: 2 / 2;
     grid-column: 1 / 2;
 }
@@ -96,4 +95,8 @@ li {
 
 a {
     font-size: 1.5vw;
+}
+.contact {
+    grid-row: 2 / 2;
+    grid-column: 1 / 1;
 }

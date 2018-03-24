@@ -7,7 +7,10 @@
       
       <p>In the close future I would like to widen my existing knowledge in python (with it’s data science related libraries) and  javascript (React and Angular frameworks). Since I gained valuable knowledge about Development Operations, now I can think about full-full-stack development on the short run. On the long run I’m mainly interested in data sciences and AI development.</p>
     </div>
-    <img class="profile_img" src="../../assets/images/nandi.jpg" alt="Profile">
+    <div class="id">
+      <img class="profile_img" src="../../assets/images/nandi.jpg" alt="Profile">
+      <div class="contact">Contacts:</div>
+    </div>
   </div>
   <div class="buttons">
     <div class="button experience" (click)="showHidexp()" [ngStyle]="activeXp()"><strong>Job Experience</strong></div>
@@ -198,28 +201,3 @@
 
 
 
-
-<!-- BUCKET LIST CODE -->
-<!-- <div class="container color-dark">
-  <div class="col">
-    <p>Add bucket list item</p>
-  </div>
-  <div class="col">
-    <p>Your bucket list ({{ itemCount }}) </p>
-  </div>
-</div>
-<div class="container color-light" [@goals]="goals.length">
-  <div class="col">
-    <p class="sm">Add new bucket list goal</p>
-
-    <form>
-      <input type="text" class="txt" name="item" placeholder="new goal" [(ngModel)]="goalText">
-      <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
-    </form>
-  </div>
-  <div class="col">
-    <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
-      {{ goal }}
-    </p>
-  </div>
-</div> -->
