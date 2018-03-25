@@ -21,11 +21,24 @@ img {
     height: auto;
 }
 
-h1 {
-    font-size: 4vw;
+.mypage {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    margin: 10% 0 0 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+    font-size: 4vw;
+    margin: 10% 0 0 0;
+
+}
+.this_is {
+    font-size: 1.4vw;
+    margin: 0 0 5% 0;
+
+
 }
 
 
@@ -99,4 +112,8 @@ a {
 .contact {
     grid-row: 2 / 2;
     grid-column: 1 / 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 5% 0 5%;
 }
