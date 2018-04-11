@@ -20,9 +20,15 @@ h1 {
   img {
     max-width: 40vw;
   }
+  video {
+    max-width: 40vw;
+  }
 }
 @media screen and (max-width: 690px) {
   img {
+    max-width: 30vw;
+  }
+  video {
     max-width: 30vw;
   }
 }
