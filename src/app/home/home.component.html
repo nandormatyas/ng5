@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="buttons">
-    <div class="button experience" (click)="showHidexp()" [ngStyle]="activeXp()"><strong>Job Experience</strong></div>
+    <div class="button experience" (click)="showHidexp(); testLog()" [ngStyle]="activeXp()"><strong>Job Experience</strong></div>
     <div class="button education" (click)="showHideEdu()" [ngStyle]="activeEdu()"><strong>Education</strong></div>
     <div class="button language" (click)="showHideLang()" [ngStyle]="activeLang()"><strong>Languages</strong></div>
   </div>

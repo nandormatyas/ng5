@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 import { DataService } from '../data.service';
+import { LogService } from '../shared/log.service';
 
 @Component({
   selector: 'app-home',
@@ -59,7 +60,11 @@ export class HomeComponent implements OnInit {
     this.hiddenEdu = !this.hiddenEdu;
   }
 
-  constructor(private _data: DataService) { }
+  constructor(private _data: DataService, private logger: LogService) { }
+
+  testLog(): void {
+    this.logger.log('asd');
+  }
 
   activeXp() {
     if (this.hiddenxp) {
@@ -104,3 +109,4 @@ export class HomeComponent implements OnInit {
 
   }
 }
+

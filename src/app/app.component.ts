@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LogService } from './shared/log.service';
+import { LogTestComponent } from './log-test/log-test.component';
 
 @Component({
   selector: 'app-root',
